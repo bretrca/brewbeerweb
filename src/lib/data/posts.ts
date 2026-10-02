@@ -3,6 +3,7 @@ import { type Post } from '@/lib/types'
 export const posts: Post[] = [
   {
     slug: 'como-empezar-cerveza-artesanal',
+    image: '/images/blog/como-empezar-cerveza-artesanal.webp',
     title: 'Cómo empezar con la cerveza artesanal sin morir en el intento',
     excerpt:
       'Una guía directa para dar tus primeros pasos en la cerveza artesanal: por dónde empezar, qué estilos probar y cómo no gastar de más.',
@@ -18,6 +19,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'mapa-estilos-ipa-lager-stout',
+    image: '/images/blog/mapa-estilos-ipa-lager-stout.webp',
     title: 'IPA, Lager, Stout y Amber: mapa rápido de estilos para elegir bien',
     excerpt:
       'Casi todo el catálogo de cerveza artesanal se ordena en cinco familias de estilos. Este mapa rápido te ayuda a orientarte.',
@@ -33,6 +35,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'por-que-comprar-cerveza-local',
+    image: '/images/blog/por-que-comprar-cerveza-local.webp',
     title: 'Por qué comprar cerveza de fábricas locales cambia el mapa cervecero',
     excerpt:
       'Frescura, economía circular y personalidad propia: las razones reales por las que la cerveza local vale la pena.',
@@ -48,6 +51,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'calendario-ferias-cerveza-artesanal',
+    image: '/images/blog/calendario-ferias-cerveza-artesanal.webp',
     title: 'Ferias y festivales de cerveza artesanal: cómo sacarle partido',
     excerpt:
       'Decenas de fábricas en un solo lugar: los festivales son el mejor atajo para conocer el sector. Estos trucos ayudan a aprovecharlos.',
@@ -63,6 +67,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'maridajes-faciles-cerveza-comida',
+    image: '/images/blog/maridajes-faciles-cerveza-comida.webp',
     title: 'Maridajes fáciles: qué cerveza va con qué plato',
     excerpt:
       'Maridar cerveza con comida no es ciencia: es lógica y atrevimiento. Cinco reglas básicas que funcionan siempre.',
@@ -78,6 +83,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'homebrewing-primeros-pasos',
+    image: '/images/blog/homebrewing-primeros-pasos.webp',
     title: 'Homebrewing 101: tu primera cerveza en casa',
     excerpt:
       'Hacer cerveza en casa es más accesible de lo que parece. Kit, proceso y los tres errores que arruinan la primera tanda.',

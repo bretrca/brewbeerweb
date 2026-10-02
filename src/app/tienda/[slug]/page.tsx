@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
 import { JsonLd } from '@/components/JsonLd'
 import { products } from '@/lib/data/products'
 import { SITE } from '@/lib/site'
@@ -70,8 +71,21 @@ export default async function ProductPage({ params }: PageProps) {
       </nav>
 
       <div className='grid gap-8 md:grid-cols-2'>
-        <div className='flex h-64 items-center justify-center rounded-2xl bg-linear-to-br from-brand-200 to-brand-400'>
-          <span className='text-2xl font-bold text-stout-900'>{product.style}</span>
+        <div className='relative aspect-[4/3] w-full overflow-hidden rounded-2xl'>
+          {product.image ? (
+            <Image
+              src={product.image}
+              alt={`Cerveza ${product.name} — ${product.style}`}
+              fill
+              priority
+              sizes='(min-width: 768px) 50vw, 100vw'
+              className='object-cover'
+            />
+          ) : (
+            <div className='flex h-full items-center justify-center bg-linear-to-br from-brand-200 to-brand-400'>
+              <span className='text-2xl font-bold text-stout-900'>{product.style}</span>
+            </div>
+          )}
         </div>
         <div className='flex flex-col gap-4'>
           <h1 className='text-3xl font-bold sm:text-4xl'>{product.name}</h1>

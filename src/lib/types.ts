@@ -5,6 +5,7 @@ export interface Product {
   abv: number
   ibu: number
   price: number
+  image?: string
   shortDescription: string
   description: string[]
   tags: string[]
@@ -13,6 +14,7 @@ export interface Product {
 export interface Post {
   slug: string
   title: string
+  image?: string
   excerpt: string
   category: string
   date: string

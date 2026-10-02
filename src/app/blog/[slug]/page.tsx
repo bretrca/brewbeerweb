@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
 import { JsonLd } from '@/components/JsonLd'
 import { PostCard, formatDate } from '@/components/PostCard'
 import { posts } from '@/lib/data/posts'
@@ -68,6 +69,19 @@ export default async function PostPage({ params }: PageProps) {
         </Link>{' '}
         / <span className='text-stout-800'>{post.title}</span>
       </nav>
+
+      {post.image && (
+        <div className='relative aspect-[16/9] w-full max-w-2xl overflow-hidden rounded-2xl'>
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            priority
+            sizes='(min-width: 768px) 672px, 100vw'
+            className='object-cover'
+          />
+        </div>
+      )}
 
       <article className='flex max-w-2xl flex-col gap-4'>
         <header className='flex flex-col gap-2'>

@@ -78,3 +78,11 @@ pnpm start   # servir build
 4. Blog a CMS o MDX cuando el seed se quede corto.
 5. Analítica (Plausible/GA4) y validación Search Console.
 6. ESLint + Prettier + tests cuando el equipo crezca.
+
+## Imágenes
+
+- Rutas de imagen en los seeds (`src/lib/data/`), renderizadas con `next/image` (Vercel las optimiza gratis a WebP/AVIF).
+- Convención: `public/images/products/<slug>.webp` (800×600) y `public/images/blog/<slug>.webp` (1200×675).
+- Los placeholders actuales se regeneran con `node scripts/generate-placeholders.mjs` (usa `sharp`).
+- Para fotos reales: sustituye los `.webp` manteniendo el nombre y haz push — el deploy lo recoge solo.
+- Si un `image` falta, las cards muestran un fallback de degradado.

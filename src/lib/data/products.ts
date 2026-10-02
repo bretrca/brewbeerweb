@@ -3,6 +3,7 @@ import { type Product } from '@/lib/types'
 export const products: Product[] = [
   {
     slug: 'ipa-local-68',
+    image: '/images/products/ipa-local-68.webp',
     name: 'IPA Local 68',
     style: 'IPA',
     abv: 6.2,
@@ -17,6 +18,7 @@ export const products: Product[] = [
   },
   {
     slug: 'lager-de-barrio',
+    image: '/images/products/lager-de-barrio.webp',
     name: 'Lager de Barrio',
     style: 'Lager',
     abv: 4.8,
@@ -31,6 +33,7 @@ export const products: Product[] = [
   },
   {
     slug: 'amber-del-pueblo',
+    image: '/images/products/amber-del-pueblo.webp',
     name: 'Amber del Pueblo',
     style: 'Amber Ale',
     abv: 5.6,
@@ -45,6 +48,7 @@ export const products: Product[] = [
   },
   {
     slug: 'stout-del-norte',
+    image: '/images/products/stout-del-norte.webp',
     name: 'Stout del Norte',
     style: 'Stout',
     abv: 6,
@@ -59,6 +63,7 @@ export const products: Product[] = [
   },
   {
     slug: 'weiss-de-verano',
+    image: '/images/products/weiss-de-verano.webp',
     name: 'Weiss de Verano',
     style: 'Weiss',
     abv: 5,
@@ -73,6 +78,7 @@ export const products: Product[] = [
   },
   {
     slug: 'pack-degustacion-local',
+    image: '/images/products/pack-degustacion-local.webp',
     name: 'Pack de degustación local',
     style: 'Pack variado',
     abv: 5.4,
