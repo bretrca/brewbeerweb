@@ -1,0 +1,88 @@
+import { type Product } from '@/lib/types'
+
+export const products: Product[] = [
+  {
+    slug: 'ipa-local-68',
+    name: 'IPA Local 68',
+    style: 'IPA',
+    abv: 6.2,
+    ibu: 55,
+    price: 3.4,
+    shortDescription: 'Cítricos intensos y amargor redondo, elaborada con lúpulos de la temporada.',
+    description: [
+      'Nuestra IPA de referencia: amargor presente pero equilibrado, con aromas a cítrico, resina y fruta tropical que llenan la copa desde el primer sorbo.',
+      'Elaborada en pequeñas tandas con lúpulos de temporada y agua de perfil suave. Ideal con quesos curados, comida picante o una conversación larga.',
+    ],
+    tags: ['lúpulo fresco', 'cítricos'],
+  },
+  {
+    slug: 'lager-de-barrio',
+    name: 'Lager de Barrio',
+    style: 'Lager',
+    abv: 4.8,
+    ibu: 22,
+    price: 2.6,
+    shortDescription: 'Limpia, fresca y con carácter: la lager artesanal para todos los días.',
+    description: [
+      'Fermentada en frío y madurada con calma, esta lager artesanal mantiene la facilidad de beber de siempre con mucho más sabor que una industrial.',
+      'Perfecta para comidas largas, arroces y pescado. La cerveza que convence a quien cree que no le gusta la cerveza artesanal.',
+    ],
+    tags: ['fácil de beber', 'frescura'],
+  },
+  {
+    slug: 'amber-del-pueblo',
+    name: 'Amber del Pueblo',
+    style: 'Amber Ale',
+    abv: 5.6,
+    ibu: 30,
+    price: 3.1,
+    shortDescription: 'Notas de caramelo y galleta con un final seco que pide otra ronda.',
+    description: [
+      'Maltas caramelizadas y un toque de lúpulo floral: esta amber ale es el punto medio perfecto entre lo suave y lo sabroso.',
+      'Marida de maravilla con carnes blancas, hamburguesas y quesos semicurados.',
+    ],
+    tags: ['malta', 'equilibrada'],
+  },
+  {
+    slug: 'stout-del-norte',
+    name: 'Stout del Norte',
+    style: 'Stout',
+    abv: 6,
+    ibu: 38,
+    price: 3.6,
+    shortDescription: 'Café, cacao y cuerpo cremoso para las noches frías.',
+    description: [
+      'Negra, cremosa y con aromas de café torrefacto y cacao. Una stout de manual para tardes de sofá y estufa.',
+      'Excelente con postres de chocolate, estofados y blue cheese.',
+    ],
+    tags: ['tostada', 'invierno'],
+  },
+  {
+    slug: 'weiss-de-verano',
+    name: 'Weiss de Verano',
+    style: 'Weiss',
+    abv: 5,
+    ibu: 14,
+    price: 2.9,
+    shortDescription: 'Plátano y clavo alemanes, ligera y muy refrescante.',
+    description: [
+      'Una cerveza de trigo del estilo bávaro: turbia, espumosa y con ese característico perfil de plátano y clavo que la hace irresistible con calor.',
+      'Ideal con ensaladas, sushi y comida picante.',
+    ],
+    tags: ['trigo', 'refrescante'],
+  },
+  {
+    slug: 'pack-degustacion-local',
+    name: 'Pack de degustación local',
+    style: 'Pack variado',
+    abv: 5.4,
+    ibu: 30,
+    price: 18.9,
+    shortDescription: 'Seis latas de fábricas de tu región: el mapa de sabores más cercano.',
+    description: [
+      'Selección rotativa de seis cervezas de fábricas locales, pensada para descubrir estilos y productores de tu zona sin repetir.',
+      'El mejor regalo para quien empieza en lo artesanal y la forma más rápida de encontrar tu cerveza favorita de proximidad.',
+    ],
+    tags: ['regalo', 'variedad'],
+  },
+]
